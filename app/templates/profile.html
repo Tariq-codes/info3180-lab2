@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="profile-container">
+    <div class="profile-header">
+        <img src="{{ url_for('static', filename='ProfileTD.jpg') }}" alt="Profile Picture" class="profile-image">
+    </div>
+
+    <div class="profile-info">
+        <h1 class="full-name">Tariq Davy</h1>
+        <p class="username">@tariqD</p>
+        <p class="location">Location: Jamaica</p>
+        <p class="joined-date">Joined: {{ joined_date }}</p>
+    </div>
+
+    <div class="profile-stats-container">
+        <p class="bio">Web developer, music enthusiast, and aspiring software engineer.</p>
+        <div class="profile-stats">
+            <div class="stat">
+                <span class="count">120</span>
+                <span class="label">Posts</span>
+            </div>
+            <div class="stat">
+                <span class="count">3202</span>
+                <span class="label">Followers</span>
+            </div>
+            <div class="stat">
+                <span class="count">105</span>
+                <span class="label">Following</span>
+            </div>
+        </div>
+    
+    <button class="follow-button">Follow</button>
+</div>
+</div>
+{% endblock %}
